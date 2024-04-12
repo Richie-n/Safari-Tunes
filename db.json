@@ -1,0 +1,52 @@
+{
+  "catalogue": [
+    {
+      "id": "90bb",
+      "Title": "Ex",
+      "Artist": "NIKITA KERING",
+      "Genre": "Afro-Pop",
+      "Cover": "Images/Ex.jpeg",
+      "Song": "songs/Nikita Kering' - Ex (Official Music Video).mp3"
+    },
+    {
+      "id": "3191",
+      "Title": "Everybody",
+      "Artist": "Juanita",
+      "Genre": "Afro-Pop",
+      "Cover": "Images/everybody.jpeg",
+      "Song": "songs/Juanita- Everybody ( Unofficial Music Video).mp3"
+    },
+    {
+      "id": "f969",
+      "Title": "LIKE THAT",
+      "Artist": "Future Metro Boomin ft Kendrik Lamar",
+      "Genre": "hip-hop",
+      "Cover": "Images/wedonttrustyou.jpeg",
+      "Song": "songs/Future - Like That (Visualizer) Feat. Metro Boomin, Kendrick Lamar.mp3"
+    },
+    {
+      "id": "5766",
+      "Title": "NAKAM SAI",
+      "Artist": "LIL MAINA X SOSATHEPRODIGY",
+      "Genre": "Urbantone",
+      "Cover": "Images/download.jpeg",
+      "Song": "songs/NAKAM SAI LIL MAINA X SOSATHEPRODIGY.mp3"
+    },
+    {
+      "id": "55ba",
+      "Title": "COCOA BUTTER",
+      "Artist": "LIL MAINA X DANSKI",
+      "Genre": "Ubarntone",
+      "Cover": "Images/download.jpeg",
+      "Song": "songs/COCOA BUTTER - LILMAINA X DANSKI.mp3"
+    },
+    {
+      "id": "aeaf",
+      "Title": "LMBSKIN-DOJA",
+      "Artist": "Nikita Kering",
+      "Genre": "Afro-Pop",
+      "Cover": "Images/LMBSKN.jpeg",
+      "Song": "songs/Nikita Kering' - Ex (Official Music Video).mp3"
+    }
+  ]
+}

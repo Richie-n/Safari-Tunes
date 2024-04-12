@@ -1,0 +1,111 @@
+/* header */
+header{
+    text-align: center;
+    color: #000000;
+    background: transparent ;
+    padding: 2em;
+    font-family: "Patrick Hand SC", cursive;
+    font-weight: bolder;
+    font-style: inherit;
+    
+}
+h3{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+
+/* search */
+.search-container {
+    text-align: center;
+}
+
+.search-box {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: 300px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* footer */
+footer{
+    text-align: center;
+    color: #000000 ;
+    background: transparent ;
+    padding: 2em;
+    font-family: "Patrick Hand SC", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+section {
+    margin-bottom: 50px; 
+}
+
+/* card */
+
+
+/* buttons */
+#download {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#delete {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#edit{
+    background-color: #330072;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body{
+    background-image: url(Images/background.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.search-container{
+    background: transparent;
+}
+.card {
+    background-color: rgba(255, 255, 255, 0.5) !important; 
+}
+#artist{
+    background-color: rgba(255, 255, 255, 0.5) !important; 
+}
+
+#title{
+    background-color: rgba(255, 255, 255, 0.5) !important; 
+}
+#genre{
+    background-color: rgba(255, 255, 255, 0.5) !important; 
+}
+#cover{
+    background-color: rgba(255, 255, 255, 0.5) !important; 
+}
+#song{
+    background-color: rgba(255, 255, 255, 0.5) !important; 
+}
+

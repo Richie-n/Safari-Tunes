@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Tunes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<main id="main" class="container">
+
+  <!-- Header -->
+  <section>
+    <header>
+      <h1>SAFARI TUNES</h1>
+      <h5>Your Music Oasis !</h5>
+    </header>
+  </section>
+  
+  <!-- Search -->
+  <section>
+    <div class="search-container">
+      <h2>Find your Song!</h2>
+      <form class = "search-form" >
+          <input type="text" name="search" class="search-box" placeholder="What do you want to listen to ?">
+          <button type="submit" id="search"class="search-button">Search</button>
+      </form>
+    </div>
+    <!-- results-->
+    <div id="results">
+      <ul class="row" id="search-results">
+        <!--your songs -->
+  
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- Upload -->
+<section>
+  <div>
+    <form class="m-4">
+    <h3 id="heading" >Upload a Song</h3>
+     <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input type="text" class="form-control" id="title" required>
+    </div> 
+     <div class="mb-3">
+        <label for="artist" class="form-label">Artist</label>
+        <input type="text" class="form-control" id="artist" required>
+      </div>
+      <div class="mb-3">
+        <label for="genre" class="form-label">Genre</label>
+        <input type="text" class="form-control" id="genre" required>
+      </div>
+      <div class="mb-3">
+        <label for="cover" class="form-label">Album Cover</label>
+        <input type="text" class="form-control" id="cover" required>
+      </div>
+      <div class="mb-3">
+        <label for="song" class="form-label">Song</label>
+        <input type="text" class="form-control" id="song" required>
+      </div>
+      <button type="submit" id="upload"class="btn btn-primary">Upload</button>
+    </form>
+  </div>
+</section>
+
+<!-- Cards -->
+<section>
+  <h4>Uploaded Songs</h4>
+  <div >
+    <ul class="row" id="song-list">
+      <!-- Add your songs here-->
+
+    </ul>
+  </div>
+</section>
+
+
+  <footer>
+    <p>&copy; 2024 Safari Tunes</p>
+  </footer>
+  <script src="index.js"></script>
+</main>
+</body>
+</html> 
