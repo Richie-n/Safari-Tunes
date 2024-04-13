@@ -72,13 +72,14 @@ section {
     border-radius: 5px;
     cursor: pointer;
 }
-#edit{
-    background-color: #330072;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.edit {
+    background-color: #330072 !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
 }
+
 
 body{
     background-image: url(Images/background.jpg);

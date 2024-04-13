@@ -1,3 +1,4 @@
+
 // Mouseover/mouseout events
 let title = document.getElementById('heading')
 console.log(title)
@@ -112,7 +113,7 @@ function downloadSong(songSrc, songTitle) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    // You can put any additional initialization code here if needed
+    
 });
 
 
@@ -196,12 +197,43 @@ function listSongs(songs){
        <source src="${songs.Song}" type="audio/mpeg">
     </audio>
     <button class = "btn m-4" id="delete">Delete</button>
-    <button class = "btn m-4" id="edit_${songs.id}">Edit</button>
+    <button class = "edit btn m-4" id="edit_${songs.id}">Edit</button>
     </div>
     
   
   `
-    playlist.append(card)
+    playlist.append(card);
+
+    // select the edit button
+    let editBtn = card.querySelector(`#edit_${songs.id}`);
+    editBtn.addEventListener('click', (e) => {
+        const songId = card.dataset.id;
+        const songTitle = song.Title;
+        const songArtist = song.Artist;
+        const songGenre = song.Genre; 
+        const songCover = song.Cover; 
+        const songSong = song.Song;  
+    
+        // Prompt the user to enter new values
+        const newTitle = prompt('Enter new Title:', songTitle);
+        const newArtist = prompt('Enter new Artist:', songArtist);
+        const newGenre = prompt('Enter new Genre:', songGenre);
+        const newCover = prompt('Enter new Cover:', songCover);
+        const newSong = prompt('Enter new Song:', songSong);
+    
+        // Prepare updated data object
+        const updatedData = {
+            Title: newTitle,    
+            Artist: newArtist,  
+            Genre: newGenre,   
+            Cover: newCover,   
+            Song: newSong       
+        };
+    
+        updateSong(songId, updatedData);
+    });
+    
+    
 
 
     // /select the delete button 
@@ -224,3 +256,15 @@ function listSongs(songs){
 
 
 }
+
+// EDIT FORM USING PATCH REQUEST
+function updateSong(songId, updatedData) {{
+    fetch(`http://localhost:3000/catalogue/${songId}`, {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(updatedData)
+    })
+
+}}
